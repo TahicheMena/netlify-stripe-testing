@@ -1,6 +1,7 @@
 [build]
 functions="src"
 functionsSource="src"
+command="npm i src/stripe-charge/; npm i src/stripe-subscription/"
 
 [context.production.environment]
 STRIPE_SECRET_KEY="prod_12345"

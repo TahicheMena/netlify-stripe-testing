@@ -14,7 +14,7 @@ exports.handler = function(event, context, callback) {
     callback(null, {
       statusCode,
       headers,
-      body: ''
+      body: 'INVALID METHOD OR EMPTY BODY'
     })
   }
 
