@@ -1,0 +1,9 @@
+[build]
+functions="src"
+functionsSource="src"
+
+[context.production.environment]
+STRIPE_SECRET_KEY="prod_12345"
+
+[context.deploy_preview.environment]
+STRIPE_SECRET_KEY="dev_12345"
