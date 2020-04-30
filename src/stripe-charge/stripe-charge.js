@@ -36,11 +36,11 @@ exports.handler = function(event, context, callback) {
 
   stripe.charges.create(
     {
-      currency: 'eur',
+      currency: data.currency,
       amount: data.amount,
-      source: data.token.id,
-      receipt_email: data.token.email,
-      description: `charge for a widget`
+      source: data.token,
+      receipt_email: data.email,
+      description: data.description
     },
     {
       idempotency_key: data.idempotency_key
