@@ -4,7 +4,7 @@ functionsSource="src"
 command="npm i src/stripe-charge/; npm i src/stripe-subscription/"
 
 [context.production.environment]
-STRIPE_SECRET_KEY="prod_12345"
+STRIPE_SECRET_KEY="sk_test_TDZEhDK7tc68yoLmFMoXEONi00HZWYBluU"
 
 [context.deploy_preview.environment]
-STRIPE_SECRET_KEY="dev_12345"
+STRIPE_SECRET_KEY="sk_test_TDZEhDK7tc68yoLmFMoXEONi00HZWYBluU"
